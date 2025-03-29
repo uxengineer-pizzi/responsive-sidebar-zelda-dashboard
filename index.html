@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar with Dropdown and Dark Theme | Giulia Pizzignacco</title>
+
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="dist/style.css" />
+  <link href="vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="vendors/fontawesome/css/regular.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <button class="sidebar__menu-button">
+    <i class="fa-regular fa-bars"></i>
+  </button>
+
+  <aside class="sidebar js-sidebar">
+    <header class="sidebar__header">
+      <a href="#" class="sidebar__logo">
+        <img src="img/compendium-logo.png" alt="Zelda Logo" class="sidebar__logo-img">
+        <div class="sidebar__logo-text">
+          <span class="sidebar__logo-title">Link's Stuff</span>
+          <span class="sidebar__logo-subtitle">Link-Stuff</span>
+        </div>
+      </a>
+      <button class="sidebar__toggler">
+        <i class="fa-regular fa-chevron-left sidebar__toggler-icon"></i>
+      </button>
+    </header>
+
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list sidebar__list--primary">
+
+        <li class="sidebar__item sidebar__item--dropdown">
+          <a href="#" class="sidebar__link sidebar__dropdown-toggle">
+            <i class="fa-regular fa-cauldron sidebar__link-icon"></i>
+            <span class="sidebar__link-text">Cooking Pot</span>
+            <i class="fa-regular fa-chevron-down sidebar__dropdown-icon"></i>
+          </a>
+
+          <ul class="sidebar__dropdown-menu">
+            <li class="sidebar__item"><a class="sidebar__link sidebar__dropdown-title">Cooking Pot</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Soup</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Rice</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Vegetables</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Meat and Seafood</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Dessert</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Tonics and Elixirs</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Other</a></li>
+          </ul>
+        </li>
+
+
+        <li class="sidebar__item sidebar__item--dropdown">
+          <a href="#" class="sidebar__link sidebar__dropdown-toggle">
+            <i class="fa-regular fa-shield-halved sidebar__link-icon"></i>
+            <span class="sidebar__link-text">Armour</span>
+            <i class="fa-regular fa-chevron-down sidebar__dropdown-icon"></i>
+          </a>
+
+          <!-- Dropdown Menu -->
+          <ul class="sidebar__dropdown-menu">
+            <li class="sidebar__item"><a class="sidebar__link sidebar__dropdown-title">Armour</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Head</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Legs</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Chest</a></li>
+          </ul>
+        </li>
+
+        <li class="sidebar__item sidebar__item--dropdown">
+          <a href="javascript:void" class="sidebar__link sidebar__dropdown-toggle">
+            <i class="fa-regular fa-map sidebar__link-icon"></i>
+            <span class="sidebar__link-text">Hylure Map</span>
+            <i class="fa-regular fa-chevron-down sidebar__dropdown-icon"></i>
+          </a>
+
+          <!-- Dropdown Menu -->
+          <ul class="sidebar__dropdown-menu">
+            <li class="sidebar__item"><a class="sidebar__link sidebar__dropdown-title">Hylure Map</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Akkala Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Dueling Peaks Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Faron Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Great Plateau Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Hebra Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Lanayru Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Tabantha Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Woodland Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Central Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Eldin Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Gerudo Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Hateno Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Lake Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Ridgeland Tower</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__dropdown-link">Wasteland Tower</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="sidebar__list sidebar__list--secondary">
+        <div class="sidebar__theme-toggle">
+          <button class="sidebar__theme-btn sidebar__theme-btn--light js-toggle-bright active"><i class="fa-regular fa-sun-bright"></i></button>
+          <button class="sidebar__theme-btn sidebar__theme-btn--dark js-toggle-dark"><i class="fa-regular fa-moon"></i></button>
+        </div>
+      </ul>
+    </nav>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
